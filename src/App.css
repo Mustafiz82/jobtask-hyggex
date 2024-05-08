@@ -1,0 +1,33 @@
+.full-screen {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 0;
+}
+
+.normal-screen {
+  width: 600px; /* Adjust width as needed */
+  /* max-width: 600px; Maximum width */
+  height: 300px; /* Allow height to adjust */
+  border-radius: 24px;
+  position: static;
+}
+@media (max-width: 768px) {
+  .normal-screen {
+    width: 90%;
+    max-width: 90%;
+    height: 200px;
+    border-radius: 12px;
+  }
+}
+
+.text-gradient {
+  background: linear-gradient(180.00deg, rgb(6, 40, 110), rgb(22, 78, 192));
+  -webkit-background-clip: text;
+  background-clip: text;
+  letter-spacing: 0%;
+  -webkit-text-fill-color: transparent;
+
+}
